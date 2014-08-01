@@ -1,8 +1,6 @@
 // Comment to get more information during initialization
 logLevel := Level.Warn
 
-// The Typesafe repository 
-resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
+lazy val root = project.in(file(".")).dependsOn(clojurePlugin)
 
-// Use the Play sbt plugin for Play projects
-addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.2.1")
+lazy val clojurePlugin = file("../../sbt-clojure")
