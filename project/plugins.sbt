@@ -1,5 +1,6 @@
 // Comment to get more information during initialization
-logLevel := Level.Debug
+//logLevel := Level.Debug
+logLevel := Level.Info
 
 //lazy val root = project.in(file(".")).dependsOn(clojurePlugin, groovyPlugin)
 lazy val root = project.in(file(".")).dependsOn(clojurePlugin)

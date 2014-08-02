@@ -1,8 +1,9 @@
-import hello.core
+import sub.num
 
 object Hi {
   def main(args: Array[String]) = {
-    println("Hi!")
-    core.printhello()
+    println("Hello world from Scala!")
+    hello.printhello()
+    println("count: "+Integer.toString(num.add(1, 2)))
   }
 }

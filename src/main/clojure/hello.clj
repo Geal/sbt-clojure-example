@@ -1,4 +1,6 @@
-(ns hello.core)
+(ns hello
+ (:gen-class :methods [#^{:static true} [printhello [] void]])
+)
 
-(defn -printhello [& args]
-  (println "Hello world from clojure"))
+(defn -printhello []
+  (println "Hello world from Clojure!"))
