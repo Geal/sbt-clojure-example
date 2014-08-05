@@ -2,9 +2,8 @@
 //logLevel := Level.Debug
 logLevel := Level.Info
 
-//lazy val root = project.in(file(".")).dependsOn(clojurePlugin, groovyPlugin)
-lazy val root = project.in(file(".")).dependsOn(clojurePlugin)
+//lazy val root = project.in(file(".")).dependsOn(clojurePlugin)
 
-lazy val clojurePlugin = file("../../sbt-clojure")
+//lazy val clojurePlugin = file("../../sbt-clojure")
 
-//lazy val groovyPlugin = file("../../sbt-groovy")
+addSbtPlugin("com.unhandledexpression" % "sbt-clojure" % "0.1")
